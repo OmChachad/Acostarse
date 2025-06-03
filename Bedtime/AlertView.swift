@@ -6,10 +6,13 @@
 //
 
 import SwiftUI
+import IOKit.pwr_mgt
 
 struct AlertView: View {
     var dismissAction: (() -> Void)?
+    
     @State private var isVisible = false
+    @State private var isGoingtoSleep = false
 
     var body: some View {
         ZStack {
@@ -34,8 +37,10 @@ struct AlertView: View {
                         Text("Turn off your Mac and head to sleep.")
                             .font(.largeTitle)
                         
-                        Button("Go to sleep") {}
-                            .buttonStyle(AlertButton())
+                        Button("Go to sleep") {
+                            startScreenSleep()
+                        }
+                        .buttonStyle(AlertButton())
                         
                         Spacer()
                         
@@ -50,6 +55,12 @@ struct AlertView: View {
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .overlay {
+            Color.black
+                .opacity(isGoingtoSleep ? 1 : 0)
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                .ignoresSafeArea()
+        }
         .onAppear {
             NSSound(named: NSSound.Name("Blow"))?.play()
             
@@ -57,6 +68,24 @@ struct AlertView: View {
                 isVisible = true
             }
         }
+    }
+    
+    func startScreenSleep() {
+        withAnimation {
+            isGoingtoSleep = true
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+            let port = IOPMFindPowerManagement(mach_port_t(MACH_PORT_NULL))
+                IOPMSleepSystem(port)
+                IOServiceClose(port)
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                isGoingtoSleep = false
+                dismissAction?()
+            }
+        }
+        
     }
 }
 

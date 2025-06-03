@@ -6,17 +6,27 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */; };
+		C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */; };
+		C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */; };
+		C2F1BE9F2DEF1C9F0056A4BA /* BedtimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */; };
+		C2F1BEA02DEF1C9F0056A4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */; };
+		C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */; };
+		C2F1BEA42DEF23D20056A4BA /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C2F1BE7E2DEF1AB20056A4BA /* Bedtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bedtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C2F1BE982DEF1C9F0056A4BA /* Bedtime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bedtime.entitlements; sourceTree = "<group>"; };
+		C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeApp.swift; sourceTree = "<group>"; };
+		C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		C2F1BE802DEF1AB20056A4BA /* Bedtime */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Bedtime;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		C2F1BE7B2DEF1AB20056A4BA /* Frameworks */ = {
@@ -32,7 +42,7 @@
 		C2F1BE752DEF1AB20056A4BA = {
 			isa = PBXGroup;
 			children = (
-				C2F1BE802DEF1AB20056A4BA /* Bedtime */,
+				C2F1BE9B2DEF1C9F0056A4BA /* Bedtime */,
 				C2F1BE7F2DEF1AB20056A4BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +53,29 @@
 				C2F1BE7E2DEF1AB20056A4BA /* Bedtime.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		C2F1BE952DEF1C9F0056A4BA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2F1BE9B2DEF1C9F0056A4BA /* Bedtime */ = {
+			isa = PBXGroup;
+			children = (
+				C2F1BE952DEF1C9F0056A4BA /* Preview Content */,
+				C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */,
+				C2F1BE982DEF1C9F0056A4BA /* Bedtime.entitlements */,
+				C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */,
+				C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */,
+				C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */,
+				C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */,
+				C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */,
+			);
+			path = Bedtime;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +92,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				C2F1BE802DEF1AB20056A4BA /* Bedtime */,
 			);
 			name = Bedtime;
 			packageProductDependencies = (
@@ -109,6 +139,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */,
+				C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +151,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */,
+				C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */,
+				C2F1BE9F2DEF1C9F0056A4BA /* BedtimeApp.swift in Sources */,
+				C2F1BEA02DEF1C9F0056A4BA /* ContentView.swift in Sources */,
+				C2F1BEA42DEF23D20056A4BA /* AlertButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

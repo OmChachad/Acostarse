@@ -23,8 +23,8 @@ class BedtimeMonitor: ObservableObject {
         DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(60 - currentTimeSecondComponent)) {
             self.checkBedtime()
             
-            self.timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { [weak self] _ in
-                self?.checkBedtime()
+            self.timer = Timer.scheduledTimer(withTimeInterval: 60, repeats: true) { _ in
+                self.checkBedtime()
             }
         }
     }

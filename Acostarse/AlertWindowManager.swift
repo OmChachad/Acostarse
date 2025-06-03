@@ -17,8 +17,8 @@ class AlertWindowManager: ObservableObject {
 
     func showAlert() {
         if window != nil { return }
-        let alertView = AlertView(dismissAction: { [weak self] in
-            self?.closeAlert()
+        let alertView = AlertView(dismissAction: {
+            self.closeAlert()
         })
         let hosting = NSHostingController(rootView: alertView)
         window = NSWindow(contentViewController: hosting)

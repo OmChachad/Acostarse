@@ -22,6 +22,11 @@ struct BedtimeApp: App {
         WindowGroup {
             ContentView()
                 .environmentObject(alertManager)
+                #if ALERT_SCREEN_TESTING
+                .onAppear {
+                    alertManager.showAlert()
+                }
+                #endif
         }
         
         MenuBarExtra("Acostarse", systemImage: "bed.double.fill") {

@@ -44,6 +44,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2EC54712DEF672D0012F73D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2F1BEA62DEF25E80056A4BA /* AcostarseManager.swift */,
+				C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		C2F1BE752DEF1AB20056A4BA = {
 			isa = PBXGroup;
 			children = (
@@ -76,10 +85,9 @@
 				C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */,
 				C2F1BE982DEF1C9F0056A4BA /* Acostarse.entitlements */,
 				C2F1BE992DEF1C9F0056A4BA /* AcostarseApp.swift */,
-				C2F1BEA62DEF25E80056A4BA /* AcostarseManager.swift */,
-				C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */,
 				C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */,
 				C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */,
+				C2EC54712DEF672D0012F73D /* Helpers */,
 				C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */,
 				C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */,
 			);

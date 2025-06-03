@@ -20,7 +20,7 @@ struct AlertView: View {
         ZStack {
             if isVisible {
                 VisualEffectView()
-                    .opacity(isVisible ? 0.95 : 0)
+                    .opacity(isVisible ? 1 : 0)
                     .ignoresSafeArea()
                 
                 VStack {
@@ -48,7 +48,14 @@ struct AlertView: View {
                         
                         if !strictMode {
                             Button("I need 5 more minutes.") {
-                                dismissAction?()
+                                withAnimation(.easeOut(duration: 0.5)) {
+                                    isVisible = false
+                                }
+                                
+                                NSApplication.shared.presentationOptions.remove([.disableProcessSwitching, .hideMenuBar, .hideDock])
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                                    dismissAction?()
+                                }
                             }
                             .buttonStyle(.borderless)
                         }

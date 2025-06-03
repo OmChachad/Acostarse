@@ -22,7 +22,7 @@ class AlertWindowManager: ObservableObject {
         window?.styleMask = [.borderless]
         window?.level = .screenSaver
         window?.isOpaque = true
-        window?.backgroundColor = NSColor.black.withAlphaComponent(0.95)
+        window?.backgroundColor = NSColor.black.withAlphaComponent(0)
         window?.ignoresMouseEvents = false
         window?.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary, .ignoresCycle]
         NSApplication.shared.presentationOptions.insert([.disableProcessSwitching, .hideMenuBar, .hideDock])

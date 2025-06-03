@@ -10,26 +10,26 @@
 		C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */; };
 		C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */; };
 		C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */; };
-		C2F1BE9F2DEF1C9F0056A4BA /* BedtimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */; };
+		C2F1BE9F2DEF1C9F0056A4BA /* AcostarseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE992DEF1C9F0056A4BA /* AcostarseApp.swift */; };
 		C2F1BEA02DEF1C9F0056A4BA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */; };
 		C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */; };
 		C2F1BEA42DEF23D20056A4BA /* AlertButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */; };
-		C2F1BEA72DEF25E80056A4BA /* BedtimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA62DEF25E80056A4BA /* BedtimeManager.swift */; };
+		C2F1BEA72DEF25E80056A4BA /* AcostarseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA62DEF25E80056A4BA /* AcostarseManager.swift */; };
 		C2F1BEA92DEF27AD0056A4BA /* AlertWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C2F1BE7E2DEF1AB20056A4BA /* Bedtime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bedtime.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2F1BE7E2DEF1AB20056A4BA /* Acostarse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acostarse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C2F1BE982DEF1C9F0056A4BA /* Bedtime.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bedtime.entitlements; sourceTree = "<group>"; };
-		C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeApp.swift; sourceTree = "<group>"; };
+		C2F1BE982DEF1C9F0056A4BA /* Acostarse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Acostarse.entitlements; sourceTree = "<group>"; };
+		C2F1BE992DEF1C9F0056A4BA /* AcostarseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcostarseApp.swift; sourceTree = "<group>"; };
 		C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
 		C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertButton.swift; sourceTree = "<group>"; };
 		C2F1BEA52DEF250E0056A4BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		C2F1BEA62DEF25E80056A4BA /* BedtimeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BedtimeManager.swift; sourceTree = "<group>"; };
+		C2F1BEA62DEF25E80056A4BA /* AcostarseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcostarseManager.swift; sourceTree = "<group>"; };
 		C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertWindowManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,7 +47,7 @@
 		C2F1BE752DEF1AB20056A4BA = {
 			isa = PBXGroup;
 			children = (
-				C2F1BE9B2DEF1C9F0056A4BA /* Bedtime */,
+				C2F1BE9B2DEF1C9F0056A4BA /* Acostarse */,
 				C2F1BE7F2DEF1AB20056A4BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 		C2F1BE7F2DEF1AB20056A4BA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2F1BE7E2DEF1AB20056A4BA /* Bedtime.app */,
+				C2F1BE7E2DEF1AB20056A4BA /* Acostarse.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -68,30 +68,30 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		C2F1BE9B2DEF1C9F0056A4BA /* Bedtime */ = {
+		C2F1BE9B2DEF1C9F0056A4BA /* Acostarse */ = {
 			isa = PBXGroup;
 			children = (
 				C2F1BEA52DEF250E0056A4BA /* Info.plist */,
 				C2F1BE952DEF1C9F0056A4BA /* Preview Content */,
 				C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */,
-				C2F1BE982DEF1C9F0056A4BA /* Bedtime.entitlements */,
-				C2F1BE992DEF1C9F0056A4BA /* BedtimeApp.swift */,
-				C2F1BEA62DEF25E80056A4BA /* BedtimeManager.swift */,
+				C2F1BE982DEF1C9F0056A4BA /* Acostarse.entitlements */,
+				C2F1BE992DEF1C9F0056A4BA /* AcostarseApp.swift */,
+				C2F1BEA62DEF25E80056A4BA /* AcostarseManager.swift */,
 				C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */,
 				C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */,
 				C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */,
 				C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */,
 				C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */,
 			);
-			path = Bedtime;
+			path = Acostarse;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2F1BE7D2DEF1AB20056A4BA /* Bedtime */ = {
+		C2F1BE7D2DEF1AB20056A4BA /* Acostarse */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2F1BE8D2DEF1AB30056A4BA /* Build configuration list for PBXNativeTarget "Bedtime" */;
+			buildConfigurationList = C2F1BE8D2DEF1AB30056A4BA /* Build configuration list for PBXNativeTarget "Acostarse" */;
 			buildPhases = (
 				C2F1BE7A2DEF1AB20056A4BA /* Sources */,
 				C2F1BE7B2DEF1AB20056A4BA /* Frameworks */,
@@ -101,11 +101,11 @@
 			);
 			dependencies = (
 			);
-			name = Bedtime;
+			name = Acostarse;
 			packageProductDependencies = (
 			);
 			productName = Bedtime;
-			productReference = C2F1BE7E2DEF1AB20056A4BA /* Bedtime.app */;
+			productReference = C2F1BE7E2DEF1AB20056A4BA /* Acostarse.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -123,7 +123,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C2F1BE792DEF1AB20056A4BA /* Build configuration list for PBXProject "Bedtime" */;
+			buildConfigurationList = C2F1BE792DEF1AB20056A4BA /* Build configuration list for PBXProject "Acostarse" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -137,7 +137,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2F1BE7D2DEF1AB20056A4BA /* Bedtime */,
+				C2F1BE7D2DEF1AB20056A4BA /* Acostarse */,
 			);
 		};
 /* End PBXProject section */
@@ -162,8 +162,8 @@
 				C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */,
 				C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */,
 				C2F1BEA92DEF27AD0056A4BA /* AlertWindowManager.swift in Sources */,
-				C2F1BEA72DEF25E80056A4BA /* BedtimeManager.swift in Sources */,
-				C2F1BE9F2DEF1C9F0056A4BA /* BedtimeApp.swift in Sources */,
+				C2F1BEA72DEF25E80056A4BA /* AcostarseManager.swift in Sources */,
+				C2F1BE9F2DEF1C9F0056A4BA /* AcostarseApp.swift in Sources */,
 				C2F1BEA02DEF1C9F0056A4BA /* ContentView.swift in Sources */,
 				C2F1BEA42DEF23D20056A4BA /* AlertButton.swift in Sources */,
 			);
@@ -291,15 +291,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bedtime/Bedtime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Acostarse/Acostarse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bedtime/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Acostarse/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bedtime/Info.plist;
+				INFOPLIST_FILE = Acostarse/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -316,7 +316,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.starlightapps.Bedtime;
+				PRODUCT_BUNDLE_IDENTIFIER = org.StarlightApps.Acostarse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -332,15 +332,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = Bedtime/Bedtime.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Acostarse/Acostarse.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Bedtime/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Acostarse/Preview Content\"";
 				DEVELOPMENT_TEAM = 3S6NT5MUQZ;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Bedtime/Info.plist;
+				INFOPLIST_FILE = Acostarse/Info.plist;
 				INFOPLIST_KEY_LSUIElement = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -357,7 +357,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = org.starlightapps.Bedtime;
+				PRODUCT_BUNDLE_IDENTIFIER = org.StarlightApps.Acostarse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
@@ -371,7 +371,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C2F1BE792DEF1AB20056A4BA /* Build configuration list for PBXProject "Bedtime" */ = {
+		C2F1BE792DEF1AB20056A4BA /* Build configuration list for PBXProject "Acostarse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2F1BE8B2DEF1AB30056A4BA /* Debug */,
@@ -380,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2F1BE8D2DEF1AB30056A4BA /* Build configuration list for PBXNativeTarget "Bedtime" */ = {
+		C2F1BE8D2DEF1AB30056A4BA /* Build configuration list for PBXNativeTarget "Acostarse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2F1BE8E2DEF1AB30056A4BA /* Debug */,

@@ -1,6 +1,6 @@
 //
-//  BedtimeManager.swift
-//  Bedtime
+//  AcostarseManager.swift
+//  Acostarse
 //
 //  Created by Om Chachad on 6/3/25.
 //

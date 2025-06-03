@@ -23,5 +23,11 @@ struct BedtimeApp: App {
             ContentView()
                 .environmentObject(alertManager)
         }
+        
+        MenuBarExtra("Acostarse", systemImage: "bed.double.fill") {
+            ContentView()
+                .frame(height: 300)
+        }
+        .menuBarExtraStyle(.window)
     }
 }

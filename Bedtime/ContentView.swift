@@ -20,9 +20,12 @@ struct ContentView: View {
             Text("What's your bedtime?")
                 .font(.largeTitle)
                 .fontWidth(.expanded)
+            
             DatePicker("Choose a time:", selection: $bedtime, displayedComponents: .hourAndMinute)
                 .padding(5)
-                .background(.thickMaterial, in: .rect(cornerRadius: 10, style: .continuous))
+                .background(.thickMaterial)
+                .background(.white.opacity(0.2))
+                .clipShape(.rect(cornerRadius: 10, style: .continuous))
             
             Spacer()
             
@@ -33,6 +36,7 @@ struct ContentView: View {
                 .foregroundStyle(.secondary)
         }
         .padding()
+        .multilineTextAlignment(.center)
     }
 }
 

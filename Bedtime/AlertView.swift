@@ -13,6 +13,8 @@ struct AlertView: View {
     
     @State private var isVisible = false
     @State private var isGoingtoSleep = false
+    
+    @AppStorage("strictMode") var strictMode: Bool = false
 
     var body: some View {
         ZStack {
@@ -44,10 +46,12 @@ struct AlertView: View {
                         
                         Spacer()
                         
-                        Button("I need 5 more minutes.") {
-                            dismissAction?()
+                        if !strictMode {
+                            Button("I need 5 more minutes.") {
+                                dismissAction?()
+                            }
+                            .buttonStyle(.borderless)
                         }
-                        .buttonStyle(.borderless)
                     }
                 }
                 .padding()

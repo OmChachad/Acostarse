@@ -25,6 +25,7 @@ class AlertWindowManager: ObservableObject {
         window?.backgroundColor = NSColor.black.withAlphaComponent(0.95)
         window?.ignoresMouseEvents = false
         window?.collectionBehavior = [.canJoinAllSpaces, .fullScreenAuxiliary, .stationary, .ignoresCycle]
+        NSApplication.shared.presentationOptions.insert([.disableProcessSwitching, .hideMenuBar, .hideDock])
         window?.setFrame(NSScreen.main?.frame ?? .zero, display: true)
         window?.makeKeyAndOrderFront(nil)
         NSApp.activate(ignoringOtherApps: true)
@@ -32,6 +33,7 @@ class AlertWindowManager: ObservableObject {
 
     func closeAlert() {
         window?.close()
+        NSApplication.shared.presentationOptions.remove([.disableProcessSwitching, .hideMenuBar, .hideDock])
         window = nil
     }
 }

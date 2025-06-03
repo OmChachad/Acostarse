@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct BedtimeApp: App {
+struct AcostarseApp: App {
     @StateObject private var alertManager = AlertWindowManager.shared
     @StateObject private var bedtimeMonitor: BedtimeMonitor
 

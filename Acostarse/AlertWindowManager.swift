@@ -10,6 +10,9 @@ import AppKit
 import SwiftUI
 
 class AlertWindowManager: ObservableObject {
+    static let shared = AlertWindowManager()
+    private init() {}
+    
     private var window: NSWindow?
 
     func showAlert() {

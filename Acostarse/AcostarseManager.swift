@@ -28,6 +28,14 @@ class BedtimeMonitor: ObservableObject {
             }
         }
     }
+    
+    func scheduleAlertIn(minutes: Double) {
+        guard minutes > 0 else { return }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + TimeInterval(minutes * 60)) {
+            self.alertManager.showAlert()
+        }
+    }
 
     private func checkBedtime() {
         let now = Calendar.current.dateComponents([.hour, .minute], from: Date())

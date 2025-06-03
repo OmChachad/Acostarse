@@ -9,6 +9,8 @@ import SwiftUI
 import IOKit.pwr_mgt
 
 struct AlertView: View {
+    @StateObject var alertWindowManager = AlertWindowManager.shared
+    
     var dismissAction: (() -> Void)?
     
     @State private var isVisible = false
@@ -51,6 +53,8 @@ struct AlertView: View {
                                 withAnimation(.easeOut(duration: 0.5)) {
                                     isVisible = false
                                 }
+                                
+                                BedtimeMonitor(alertManager: alertWindowManager).scheduleAlertIn(minutes: 5)
                                 
                                 NSApplication.shared.presentationOptions.remove([.disableProcessSwitching, .hideMenuBar, .hideDock])
                                 DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {

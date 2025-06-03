@@ -11,8 +11,6 @@ struct ContentView: View {
     @AppStorage("bedtime") var bedtime: Date = Calendar.current.date(bySettingHour: 23, minute: 0, second: 0, of: Date()) ?? Date()
     @AppStorage("strictMode") var strictMode: Bool = false
     
-    @StateObject private var alertManager = AlertWindowManager()
-    
     enum Style {
         case mainApp, menuBar
     }

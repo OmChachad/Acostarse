@@ -12,6 +12,12 @@ struct ContentView: View {
     @AppStorage("strictMode") var strictMode: Bool = false
     
     @StateObject private var alertManager = AlertWindowManager()
+    
+    enum Style {
+        case mainApp, menuBar
+    }
+    
+    var style: Style = .mainApp
 
     var body: some View {
         VStack {
@@ -44,6 +50,17 @@ struct ContentView: View {
         }
         .padding()
         .multilineTextAlignment(.center)
+        .overlay(alignment: .topTrailing) {
+            if style == .menuBar {
+                Button("Close", systemImage: "xmark") {
+                    NSApp.terminate(nil)
+                }
+                .bold()
+                .buttonStyle(.borderless)
+                .labelStyle(.iconOnly)
+                .padding()
+            }
+        }
     }
 }
 

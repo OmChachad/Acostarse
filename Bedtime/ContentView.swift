@@ -21,8 +21,14 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWidth(.expanded)
             
+
             DatePicker("Choose a time:", selection: $bedtime, displayedComponents: .hourAndMinute)
                 .padding(5)
+                .datePickerStyle(.field)
+                .scaleEffect(1.5)
+                .labelsHidden()
+                .offset(y: 2)
+                .frame(width: 95, height: 30)
                 .background(.thickMaterial)
                 .background(.white.opacity(0.2))
                 .clipShape(.rect(cornerRadius: 10, style: .continuous))
@@ -34,6 +40,7 @@ struct ContentView: View {
             
             Text("Strict Mode will prevent you from delaying bedtime.")
                 .foregroundStyle(.secondary)
+                .font(.footnote)
         }
         .padding()
         .multilineTextAlignment(.center)

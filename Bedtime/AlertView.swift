@@ -13,38 +13,43 @@ struct AlertView: View {
 
     var body: some View {
         ZStack {
-            VisualEffectView()
-                .opacity(0.95)
-                .ignoresSafeArea()
-            
-            VStack {
-                Spacer()
+            if isVisible {
+                VisualEffectView()
+                    .opacity(isVisible ? 0.95 : 0)
+                    .ignoresSafeArea()
                 
-                Image(systemName: "bed.double.fill")
-                    .font(.system(size: 100))
-                    .padding(.bottom, 20)
-                
-                Text("It's bedtime.")
-                    .font(.system(size: 50))
-                    .bold()
-                    .fontWidth(.expanded)
-                
-                Text("Turn off your Mac and head to sleep.")
-                    .font(.largeTitle)
-                
-                Button("Go to sleep") {}
-                    .buttonStyle(AlertButton())
-                
-                Spacer()
-                
-                Button("I need 5 more minutes.") {
-                    dismissAction?()
+                VStack {
+                    Spacer()
+                    
+                    if isVisible {
+                        Image(systemName: "bed.double.fill")
+                            .font(.system(size: 100))
+                            .padding(.bottom, 20)
+                        
+                        Text("It's bedtime.")
+                            .font(.system(size: 50))
+                            .bold()
+                            .fontWidth(.expanded)
+                        
+                        Text("Turn off your Mac and head to sleep.")
+                            .font(.largeTitle)
+                        
+                        Button("Go to sleep") {}
+                            .buttonStyle(AlertButton())
+                        
+                        Spacer()
+                        
+                        Button("I need 5 more minutes.") {
+                            dismissAction?()
+                        }
+                        .buttonStyle(.borderless)
+                    }
                 }
-                .buttonStyle(.borderless)
+                .padding()
+                .transition(.blurReplace)
             }
-            .padding()
         }
-        .opacity(isVisible ? 1 : 0)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
         .onAppear {
             NSSound(named: NSSound.Name("Blow"))?.play()
             

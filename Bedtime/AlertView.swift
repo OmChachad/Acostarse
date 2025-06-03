@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-import SwiftUI
-
-import SwiftUI
-
 struct AlertView: View {
     var dismissAction: (() -> Void)?
     @State private var isVisible = false
@@ -50,6 +46,8 @@ struct AlertView: View {
         }
         .opacity(isVisible ? 1 : 0)
         .onAppear {
+            NSSound(named: NSSound.Name("Blow"))?.play()
+            
             withAnimation(.easeOut(duration: 1.5)) {
                 isVisible = true
             }

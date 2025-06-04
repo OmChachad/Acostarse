@@ -11,10 +11,9 @@ import Combine
 class BedtimeMonitor: ObservableObject {
     @AppStorage("bedtime") var bedtime: Date = Calendar.current.date(bySettingHour: 23, minute: 0, second: 0, of: Date()) ?? Date()
     private var timer: Timer?
-    private let alertManager: AlertWindowManager
+    private let alertManager: AlertWindowManager = AlertWindowManager.shared
 
-    init(alertManager: AlertWindowManager) {
-        self.alertManager = alertManager
+    init() {
         startTimer()
     }
 

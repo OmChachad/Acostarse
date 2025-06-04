@@ -16,6 +16,8 @@ struct ContentView: View {
     }
     
     var style: Style = .mainApp
+    
+    @FocusState var isFocused: Bool
 
     var body: some View {
         VStack {
@@ -25,17 +27,40 @@ struct ContentView: View {
                 .font(.largeTitle)
                 .fontWidth(.expanded)
             
-
-            DatePicker("Choose a time:", selection: $bedtime, displayedComponents: .hourAndMinute)
-                .padding(5)
-                .datePickerStyle(.field)
-                .scaleEffect(1.5)
-                .labelsHidden()
-                .offset(y: 2)
-                .frame(width: 95, height: 30)
-                .background(.thickMaterial)
-                .background(.white.opacity(0.2))
-                .clipShape(.rect(cornerRadius: 10, style: .continuous))
+            HStack {
+                DatePicker("Choose a time:", selection: $bedtime, displayedComponents: .hourAndMinute)
+                    .padding(5)
+                    .datePickerStyle(.field)
+                    .scaleEffect(1.5)
+                    .labelsHidden()
+                    .offset(y: 2)
+                    .frame(width: 95, height: 30)
+                    .background(.thickMaterial)
+                    .background(.white.opacity(0.2))
+                    .clipShape(.rect(cornerRadius: 10, style: .continuous))
+                    .focused($isFocused)
+                    .transition(.blurReplace)
+                
+                if isFocused {
+                    Button("Done", systemImage: "checkmark") {
+                        isFocused = false
+                    }
+                    .labelStyle(.iconOnly)
+                    .buttonStyle(.borderless)
+                    .bold()
+                    .foregroundStyle(Color.accentColor)
+                    .font(.system(size: 15, weight: .bold))
+                    .frame(width: 30, height: 30)
+                    .background(.thickMaterial)
+                    .background(.white.opacity(0.2))
+                    .clipShape(.rect(cornerRadius: 10, style: .continuous))
+                    .opacity(isFocused ? 1 : 0)
+                    .transition(.blurReplace)
+                }
+            }
+            .animation(.spring, value: isFocused)
+            
+            
             
             Spacer()
             

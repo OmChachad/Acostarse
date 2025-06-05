@@ -52,7 +52,11 @@ struct SettingsView: View {
         .frame(width: 400, height: height)
         .animation(.default, value: current)
         .onAppear {
-            NSApp.activate(ignoringOtherApps: true)
+            if let window = NSApplication.shared.windows.last {
+                window.makeKeyAndOrderFront(nil)
+                window.level = .normal
+                NSApp.activate(ignoringOtherApps: true)
+            }
         }
     }
 }

@@ -36,5 +36,6 @@ struct AcostarseApp: App {
             SettingsView()
                 .environmentObject(storeKit)
         }
+        .defaultPosition(.center)
     }
 }

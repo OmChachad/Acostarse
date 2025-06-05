@@ -23,6 +23,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             presentOnboardingWindow()
         } else {
             print("Onboarding already completed")
+            
+            #if ONBOARDING_TESTING
+            presentOnboardingWindow()
+            #endif
         }
     }
 }

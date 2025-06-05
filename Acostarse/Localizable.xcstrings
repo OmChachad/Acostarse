@@ -81,6 +81,7 @@
       }
     },
     "Close" : {
+      "extractionState" : "stale",
       "localizations" : {
         "es" : {
           "stringUnit" : {
@@ -277,6 +278,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Política de privacidad"
+          }
+        }
+      }
+    },
+    "Quit App" : {
+      "localizations" : {
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Salir de Acostarse"
           }
         }
       }

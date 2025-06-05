@@ -35,7 +35,7 @@ struct ContentView: View {
         .multilineTextAlignment(.center)
         .overlay(alignment: .topTrailing) {
             if style == .menuBar {
-                Button("Close", systemImage: "xmark") {
+                Button("Quit App", systemImage: "xmark") {
                     NSApp.terminate(nil)
                 }
                 .buttonStyle(MenuBarToolbarButtonStyle(direction: .trailing))

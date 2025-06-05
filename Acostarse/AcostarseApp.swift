@@ -11,6 +11,7 @@ import SwiftUI
 struct AcostarseApp: App {
     @StateObject private var alertManager = AlertWindowManager.shared
     @StateObject private var bedtimeMonitor: BedtimeMonitor = BedtimeMonitor()
+    @StateObject var storeKit = Store.shared
 
     var body: some Scene {
         WindowGroup {
@@ -28,5 +29,10 @@ struct AcostarseApp: App {
                 .frame(height: 300)
         }
         .menuBarExtraStyle(.window)
+        
+        Settings {
+            SettingsView()
+                .environmentObject(storeKit)
+        }
     }
 }

@@ -50,6 +50,9 @@
             ReferencedContainer = "container:Acostarse.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <StoreKitConfigurationFileReference
+         identifier = "../../Acostarse/Settings/StoreKit/Synced Tips.storekit">
+      </StoreKitConfigurationFileReference>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"

@@ -1,0 +1,180 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "037AC2B0",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "0.99",
+      "familyShareable" : false,
+      "internalID" : "6746829282",
+      "localizations" : [
+        {
+          "description" : "¡Dile al desarrollador que te encanta!",
+          "displayName" : "Agradecimiento",
+          "locale" : "es_ES"
+        },
+        {
+          "description" : "Let the developer know you love the app!",
+          "displayName" : "Appreciation",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "¡Dile al desarrollador que te encanta!",
+          "displayName" : "Agradecimiento",
+          "locale" : "es_MX"
+        }
+      ],
+      "productID" : "Tip_A",
+      "referenceName" : "Appreciation",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "6746829313",
+      "localizations" : [
+        {
+          "description" : "Un pequeño gesto con mucho valor.",
+          "displayName" : "Detalle con cariño",
+          "locale" : "es_ES"
+        },
+        {
+          "description" : "Un pequeño gesto con mucho valor.",
+          "displayName" : "Detalle con cariño",
+          "locale" : "es_MX"
+        },
+        {
+          "description" : "Show your gratitude with a thoughtful token!",
+          "displayName" : "Heartfelt Gift",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "Tip_B",
+      "referenceName" : "Heartfelt Gift",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "6746828998",
+      "localizations" : [
+        {
+          "description" : "Make a meaningful impact to the developer!",
+          "displayName" : "Impactful Gesture",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Haz una diferencia real con tu apoyo.",
+          "displayName" : "Apoyo significativo",
+          "locale" : "es_MX"
+        },
+        {
+          "description" : "Haz una diferencia real con tu apoyo.",
+          "displayName" : "Apoyo significativo",
+          "locale" : "es_ES"
+        }
+      ],
+      "productID" : "Tip_C",
+      "referenceName" : "Impactful Gesture",
+      "type" : "NonConsumable"
+    },
+    {
+      "displayPrice" : "19.99",
+      "familyShareable" : false,
+      "internalID" : "6746829392",
+      "localizations" : [
+        {
+          "description" : "Supercharge the developer's efforts!",
+          "displayName" : "Mega Support",
+          "locale" : "en_US"
+        },
+        {
+          "description" : "Impulsa al máximo el desarrollo de la app.",
+          "displayName" : "Súper apoyo",
+          "locale" : "es_ES"
+        },
+        {
+          "description" : "Impulsa al máximo el desarrollo de la app.",
+          "displayName" : "Súper apoyo",
+          "locale" : "es_MX"
+        }
+      ],
+      "productID" : "Tip_D",
+      "referenceName" : "Mega Support",
+      "type" : "NonConsumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "6746826547",
+    "_developerTeamID" : "3S6NT5MUQZ",
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 770790960.83050394,
+    "_locale" : "en_US",
+    "_storefront" : "USA",
+    "_storeKitErrors" : [
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Load Products"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Purchase"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Verification"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Store Sync"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Subscription Status"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "App Transaction"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Manage Subscriptions Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Refund Request Sheet"
+      },
+      {
+        "current" : null,
+        "enabled" : false,
+        "name" : "Offer Code Redeem Sheet"
+      }
+    ]
+  },
+  "subscriptionGroups" : [
+
+  ],
+  "version" : {
+    "major" : 4,
+    "minor" : 0
+  }
+}

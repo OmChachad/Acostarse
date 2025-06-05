@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2EB4F982DF1561800226CB8 /* Synced Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */; };
+		C2EB4F9B2DF1566500226CB8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */; };
+		C2EC54752DF14CDA0012F73D /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54742DF14CDA0012F73D /* Settings.swift */; };
+		C2EC54772DF14D4F0012F73D /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54762DF14D4F0012F73D /* About.swift */; };
+		C2EC547E2DF14D5E0012F73D /* TipJar.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54782DF14D5E0012F73D /* TipJar.swift */; };
+		C2EC547F2DF14D5E0012F73D /* StoreKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54792DF14D5E0012F73D /* StoreKitManager.swift */; };
+		C2EC54802DF14D5E0012F73D /* Tips.plist in Resources */ = {isa = PBXBuildFile; fileRef = C2EC547B2DF14D5E0012F73D /* Tips.plist */; };
+		C2EC54812DF14D5E0012F73D /* Local Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C2EC547C2DF14D5E0012F73D /* Local Tips.storekit */; };
+		C2EC54862DF14D860012F73D /* GeneralSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54852DF14D860012F73D /* GeneralSettings.swift */; };
+		C2EC54882DF14DEB0012F73D /* Roadmap.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EC54872DF14DEB0012F73D /* Roadmap.swift */; };
 		C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */; };
 		C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2F1BE972DEF1C9F0056A4BA /* Assets.xcassets */; };
 		C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */; };
@@ -19,6 +29,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
+		C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		C2EC54742DF14CDA0012F73D /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C2EC54762DF14D4F0012F73D /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		C2EC54782DF14D5E0012F73D /* TipJar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipJar.swift; sourceTree = "<group>"; };
+		C2EC54792DF14D5E0012F73D /* StoreKitManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreKitManager.swift; sourceTree = "<group>"; };
+		C2EC547B2DF14D5E0012F73D /* Tips.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Tips.plist; sourceTree = "<group>"; };
+		C2EC547C2DF14D5E0012F73D /* Local Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Local Tips.storekit"; sourceTree = "<group>"; };
+		C2EC54852DF14D860012F73D /* GeneralSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralSettings.swift; sourceTree = "<group>"; };
+		C2EC54872DF14DEB0012F73D /* Roadmap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roadmap.swift; sourceTree = "<group>"; };
 		C2F1BE7E2DEF1AB20056A4BA /* Acostarse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Acostarse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F1BE942DEF1C9F0056A4BA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
@@ -38,12 +58,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2EB4F9B2DF1566500226CB8 /* StoreKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2EB4F992DF1566500226CB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C2EC54712DEF672D0012F73D /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -53,10 +82,35 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		C2EC547D2DF14D5E0012F73D /* StoreKit */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC54782DF14D5E0012F73D /* TipJar.swift */,
+				C2EC54792DF14D5E0012F73D /* StoreKitManager.swift */,
+				C2EC547B2DF14D5E0012F73D /* Tips.plist */,
+				C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */,
+				C2EC547C2DF14D5E0012F73D /* Local Tips.storekit */,
+			);
+			path = StoreKit;
+			sourceTree = "<group>";
+		};
+		C2EC54842DF14D6F0012F73D /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				C2EC54742DF14CDA0012F73D /* Settings.swift */,
+				C2EC54852DF14D860012F73D /* GeneralSettings.swift */,
+				C2EC54872DF14DEB0012F73D /* Roadmap.swift */,
+				C2EC54762DF14D4F0012F73D /* About.swift */,
+				C2EC547D2DF14D5E0012F73D /* StoreKit */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		C2F1BE752DEF1AB20056A4BA = {
 			isa = PBXGroup;
 			children = (
 				C2F1BE9B2DEF1C9F0056A4BA /* Acostarse */,
+				C2EB4F992DF1566500226CB8 /* Frameworks */,
 				C2F1BE7F2DEF1AB20056A4BA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -87,6 +141,7 @@
 				C2F1BE992DEF1C9F0056A4BA /* AcostarseApp.swift */,
 				C2F1BE9A2DEF1C9F0056A4BA /* ContentView.swift */,
 				C2F1BE962DEF1C9F0056A4BA /* AlertView.swift */,
+				C2EC54842DF14D6F0012F73D /* Settings */,
 				C2EC54712DEF672D0012F73D /* Helpers */,
 				C2F1BEA32DEF23D20056A4BA /* AlertButton.swift */,
 				C2F1BEA12DEF23BF0056A4BA /* VisualEffectView.swift */,
@@ -155,6 +210,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2EB4F982DF1561800226CB8 /* Synced Tips.storekit in Resources */,
+				C2EC54802DF14D5E0012F73D /* Tips.plist in Resources */,
+				C2EC54812DF14D5E0012F73D /* Local Tips.storekit in Resources */,
 				C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */,
 				C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */,
 			);
@@ -168,11 +226,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2F1BE9E2DEF1C9F0056A4BA /* AlertView.swift in Sources */,
+				C2EC54882DF14DEB0012F73D /* Roadmap.swift in Sources */,
+				C2EC547E2DF14D5E0012F73D /* TipJar.swift in Sources */,
+				C2EC547F2DF14D5E0012F73D /* StoreKitManager.swift in Sources */,
 				C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */,
+				C2EC54752DF14CDA0012F73D /* Settings.swift in Sources */,
 				C2F1BEA92DEF27AD0056A4BA /* AlertWindowManager.swift in Sources */,
 				C2F1BEA72DEF25E80056A4BA /* BedtimeMonitor.swift in Sources */,
+				C2EC54862DF14D860012F73D /* GeneralSettings.swift in Sources */,
 				C2F1BE9F2DEF1C9F0056A4BA /* AcostarseApp.swift in Sources */,
 				C2F1BEA02DEF1C9F0056A4BA /* ContentView.swift in Sources */,
+				C2EC54772DF14D4F0012F73D /* About.swift in Sources */,
 				C2F1BEA42DEF23D20056A4BA /* AlertButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

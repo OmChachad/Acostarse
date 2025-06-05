@@ -84,6 +84,17 @@ struct ContentView: View {
                 .padding()
             }
         }
+        .overlay(alignment: .topLeading) {
+            if style == .menuBar {
+                SettingsLink(label: {
+                    Label("Settings", systemImage: "gear")
+                })
+                .bold()
+                .buttonStyle(.borderless)
+                .labelStyle(.iconOnly)
+                .padding()
+            }
+        }
     }
 }
 

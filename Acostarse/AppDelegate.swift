@@ -17,9 +17,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         // Perform any setup after the application has launched
         print("Application did finish launching")
         
-        let onboardingCompletedDateData = UserDefaults.standard.value(forKey: "onboardingCompletedDate")
+        let onboardingCompletedDate = UserDefaults.standard.value(forKey: "firstOnboardingCompletionDate")
         
-        if onboardingCompletedDateData == nil {
+        if onboardingCompletedDate == nil {
             presentOnboardingWindow()
         } else {
             print("Onboarding already completed")

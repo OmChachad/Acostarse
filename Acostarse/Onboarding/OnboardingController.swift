@@ -9,7 +9,7 @@ import SwiftUI
 import ServiceManagement
 
 struct OnboardingController: View {
-    @AppStorage("onboardingCompletedDate") private var onboardingCompletedDate: Date?
+    @AppStorage("firstOnboardingCompletionDate") private var onboardingCompletedDate: Date?
     
     @Environment(\.colorScheme) var colorScheme
     

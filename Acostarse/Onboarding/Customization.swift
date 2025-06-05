@@ -12,14 +12,14 @@ struct Customization: View {
     
     var body: some View {
         VStack {
-            Text("Prone to Proctrastination?\nEnable Strict Mode.")
+            Text("Onboarding.StrictMode.title")
                 .font(.largeTitle)
                 .fontWidth(.expanded)
             
-            Toggle("Strict Mode", isOn: $strictMode)
+            Toggle("StrictMode.title", isOn: $strictMode)
                 .toggleStyle(SwitchToggleStyle(tint: .accentColor))
             
-            Text("Strict Mode will prevent you from delaying bedtime and will force you to put your Mac to sleep.")
+            Text("StrictMode.explanation")
                 .foregroundStyle(.secondary)
                 .font(.footnote)
         }

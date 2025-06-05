@@ -13,6 +13,7 @@
 		C2CD47C52DF15AA0006A7E43 /* StartUsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C42DF15AA0006A7E43 /* StartUsingView.swift */; };
 		C2CD47C72DF15FF2006A7E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C62DF15FF2006A7E43 /* AppDelegate.swift */; };
 		C2CD47C92DF16ADD006A7E43 /* LogInToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C82DF16ADD006A7E43 /* LogInToggle.swift */; };
+		C2CD47CB2DF170D7006A7E43 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = C2CD47CA2DF170D7006A7E43 /* Localizable.xcstrings */; };
 		C2EB4F982DF1561800226CB8 /* Synced Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */; };
 		C2EB4F9B2DF1566500226CB8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */; };
 		C2EB4FA32DF1588000226CB8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB4FA22DF1588000226CB8 /* OnboardingController.swift */; };
@@ -43,6 +44,7 @@
 		C2CD47C42DF15AA0006A7E43 /* StartUsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUsingView.swift; sourceTree = "<group>"; };
 		C2CD47C62DF15FF2006A7E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C2CD47C82DF16ADD006A7E43 /* LogInToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToggle.swift; sourceTree = "<group>"; };
+		C2CD47CA2DF170D7006A7E43 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; name = Localizable.xcstrings; path = Acostarse/Localizable.xcstrings; sourceTree = "<group>"; };
 		C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
 		C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C2EB4FA22DF1588000226CB8 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		C2F1BE752DEF1AB20056A4BA = {
 			isa = PBXGroup;
 			children = (
+				C2CD47CA2DF170D7006A7E43 /* Localizable.xcstrings */,
 				C2F1BE9B2DEF1C9F0056A4BA /* Acostarse */,
 				C2EB4F992DF1566500226CB8 /* Frameworks */,
 				C2F1BE7F2DEF1AB20056A4BA /* Products */,
@@ -224,6 +227,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = C2F1BE752DEF1AB20056A4BA;
 			minimizedProjectReferenceProxies = 1;
@@ -244,6 +248,7 @@
 			files = (
 				C2EB4F982DF1561800226CB8 /* Synced Tips.storekit in Resources */,
 				C2EC54802DF14D5E0012F73D /* Tips.plist in Resources */,
+				C2CD47CB2DF170D7006A7E43 /* Localizable.xcstrings in Resources */,
 				C2EC54812DF14D5E0012F73D /* Local Tips.storekit in Resources */,
 				C2F1BE9C2DEF1C9F0056A4BA /* Preview Assets.xcassets in Resources */,
 				C2F1BE9D2DEF1C9F0056A4BA /* Assets.xcassets in Resources */,
@@ -342,6 +347,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = "Debug-AlertScreen";
@@ -446,6 +452,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -500,6 +507,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};

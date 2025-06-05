@@ -19,24 +19,24 @@ struct TipJar: View {
             VStack {
                 VStack {
                     VStack(alignment: .leading) {
-                        Text("🤔 Why should I tip?")
+                        Text("TipJar.whyTip")
                             .font(.title3.bold())
                             .padding(.vertical, 5)
                         
-                        Text("Tipping lets me, the sole developer of Acostarse, know that you're enjoying the app, helps sustain development and lets me keep the app 100% free for all users.")
+                        Text("TipJar.explanation")
                             .fixedSize(horizontal: false, vertical: true)
                     }
                     
                     VStack(alignment: .leading) {
-                        Text("All Perks")
+                        Text("TipJar.PerksTitle")
                             .bold()
                             .padding(.vertical, 5)
                         
                         VStack(spacing: 5) {
-                            bulletLine("Appreciate the App", systemImage: "heart.fill", tint: .pink)
-                            bulletLine("Support Indie Development", systemImage: "wrench.and.screwdriver.fill", tint: .blue)
-                            bulletLine("Facilitate Future Updates", systemImage: "clock.arrow.2.circlepath", tint: .yellow)
-                            bulletLine("Keep the app Free-to-use", systemImage: "face.dashed", tint: .green)
+                            bulletLine("TipJar.Appreciate", systemImage: "heart.fill", tint: .pink)
+                            bulletLine("TipJar.Support", systemImage: "wrench.and.screwdriver.fill", tint: .blue)
+                            bulletLine("TipJar.FacilitateUpdates", systemImage: "clock.arrow.2.circlepath", tint: .yellow)
+                            bulletLine("TipJar.KeepFree", systemImage: "face.dashed", tint: .green)
                         }
                     }
                 }
@@ -53,8 +53,7 @@ struct TipJar: View {
                         Divider()
                         
                         Text("""
-                    I get 70% of how much you tip, 30% goes to Apple.
-                    *All tips matter equally,* Thank you so much!
+                    TipJar.Disclaimer
                     """)
                         .frame(maxWidth: .infinity, alignment: .leading)
                     }
@@ -76,7 +75,7 @@ struct TipJar: View {
                         Label("Write a Review", systemImage: "square.and.pencil")
                     }
                 } header: {
-                    Text("Can't tip? Other ways to support:")
+                    Text("TipJar.otherWaysToSupport")
                 }
             }
             .padding(25)

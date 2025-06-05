@@ -54,6 +54,7 @@ struct OnboardingController: View {
                         .frame(maxWidth: .infinity, maxHeight: .infinity)
                         .padding(.vertical, 50)
                 }
+                .multilineTextAlignment(.center)
                 .overlay(alignment: .bottom) {
                     HStack {
                         if currentPage != .welcome {

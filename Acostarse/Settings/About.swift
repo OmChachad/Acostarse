@@ -22,9 +22,9 @@ struct About: View {
                         .shadow(radius: 2)
                     
                     VStack(alignment: .leading) {
-                        Text("Hi, I'm Om Chachad! 👋🏻")
+                        Text("About.Hi")
                             .font(.title3.bold())
-                        Text("I'm the sole developer behind Acostarse, thanks for checking out my app. I'm a passionate software developer who loves making apps for free. I hope you are enjoying Acostarse!")
+                        Text("About.Description")
                             .foregroundColor(.secondary)
                     }
                 }

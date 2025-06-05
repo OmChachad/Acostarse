@@ -17,10 +17,10 @@ struct Roadmap: View {
     }
 
     private let roadmapItems: [RoadmapItem] = [
-        RoadmapItem(title: "iOS App", symbol: "iphone.gen3", description: "Bringing over a bedtime reminder to iOS."),
-        RoadmapItem(title: "Wind Down", symbol: "moon.zzz", description: "A reminder to nudge you to wind down before bedtime."),
-        RoadmapItem(title: "Intelligent Breakthrough", symbol: "brain.head.profile", description: "A system to intelligently delay bedtime reminders based on ongoing important activities."),
-        RoadmapItem(title: "Friction for Delaying Bedtime", symbol: "hourglass.bottomhalf.filled", description: "Adding friction to discourage delaying bedtime, ensuring a healthier sleep routine.")
+        RoadmapItem(title: "Roadmap.iOSApp", symbol: "iphone.gen3", description: "Roadmap.iOSApp.description"),
+        RoadmapItem(title: "Roadmap.WindDown", symbol: "moon.zzz", description: "Roadmap.WindDown.description"),
+        RoadmapItem(title: "Roadmap.IntelligentBreakthrough", symbol: "brain.head.profile", description: "Roadmap.IntelligentBreakthrough.description"),
+        RoadmapItem(title: "Roadmap.DelayFriction", symbol: "hourglass.bottomhalf.filled", description: "Roadmap.DelayFriction.description")
     ]
     
     var body: some View {
@@ -44,7 +44,7 @@ struct Roadmap: View {
                 }
             }
             
-            Section("Have a feature you really want to see?") {
+            Section("Roadmap.RequestFeature") {
                 LabeledContent("Get in touch") { Text("contact@starlightapps.org") }
             }
         }

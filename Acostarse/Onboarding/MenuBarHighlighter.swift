@@ -20,10 +20,10 @@ struct MenuBarHighlighter: View {
             Spacer()
                 .frame(height: 50)
             
-            Text("Acostarse lives in your menu bar.")
+            Text("Onboarding.MenuBarHighlighter.title")
                 .font(.largeTitle)
                 .fontWidth(.expanded)
-            Text("Click on the menu bar icon to re-configure your bedtime settings anytime.")
+            Text("Onboarding.MenuBarHighlighter.explanation")
                 .foregroundStyle(.secondary)
         }
         .multilineTextAlignment(.center)

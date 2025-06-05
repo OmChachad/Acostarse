@@ -24,10 +24,10 @@ struct ContentView: View {
             
             Spacer()
             
-            Toggle("Strict Mode", isOn: $strictMode)
+            Toggle("StrictMode.title", isOn: $strictMode)
                 .toggleStyle(SwitchToggleStyle(tint: .accentColor))
             
-            Text("Strict Mode will prevent you from delaying bedtime.")
+            Text("StrictMode.explanationCompact")
                 .foregroundStyle(.secondary)
                 .font(.footnote)
         }

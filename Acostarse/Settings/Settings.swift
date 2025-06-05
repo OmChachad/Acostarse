@@ -26,13 +26,13 @@ struct SettingsView: View {
         TabView(selection: $current) {
             GeneralSettings()
                 .tabItem {
-                    Label("General", systemImage: "gear")
+                    Label("Settings.General", systemImage: "gear")
                 }
                 .tag(1)
             
             Roadmap()
                 .tabItem {
-                    Label("Roadmap", systemImage: "list.bullet")
+                    Label("Settings.Roadmap", systemImage: "list.bullet")
                 }
                 .tag(2)
             
@@ -45,7 +45,7 @@ struct SettingsView: View {
             
             About()
                 .tabItem {
-                    Label("About", systemImage: "info.circle")
+                    Label("Settings.About", systemImage: "info.circle")
                 }
                 .tag(4)
         }

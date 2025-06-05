@@ -16,7 +16,7 @@ struct WelcomeView: View {
                 .frame(width: 200, height: 200)
                 .offset(y: -10)
             
-            Text("Welcome to Acostarse!")
+            Text("Onboarding.Welcome")
                 .font(.largeTitle)
                 .fontWidth(.expanded)
                 .bold()

@@ -16,11 +16,12 @@ struct GeneralSettings: View {
     var body: some View {
         Form {
             Section {
-                Toggle("Strict Mode", isOn: $strictMode)
+                Toggle("StrictMode.title", isOn: $strictMode)
                     .toggleStyle(SwitchToggleStyle(tint: .blue))
-                    .help("Strict Mode disables the '5 more minutes' button and forces you to go to sleep when the alert appears.")
+                    .help("StrictMode.explanation")
             } footer: {
-                Text("Strict Mode disables the '5 more minutes' button and forces you to go to sleep when the alert appears.")
+                Text("StrictMode.explanation")
+                    .foregroundStyle(.secondary)
             }
             
             LogInToggle()

@@ -31,15 +31,15 @@ struct AlertView: View {
                             .font(.system(size: 100))
                             .padding(.bottom, 20)
                         
-                        Text("It's bedtime.")
+                        Text("FullScreenAlert.title")
                             .font(.system(size: 50))
                             .bold()
                             .fontWidth(.expanded)
                         
-                        Text("Turn off your Mac and head to sleep.")
+                        Text("FullScreenAlert.subtitle")
                             .font(.largeTitle)
                         
-                        Button("Go to sleep") {
+                        Button("FullScreenAlert.goToSleepButton") {
                             startScreenSleep()
                         }
                         .buttonStyle(AlertButton())
@@ -47,7 +47,7 @@ struct AlertView: View {
                         Spacer()
                         
                         if !strictMode {
-                            Button("I need 5 more minutes.") {
+                            Button("FullScreenAlert.delaySleep") {
                                 withAnimation(.easeOut(duration: 0.5)) {
                                     isVisible = false
                                 }

@@ -26,10 +26,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
     }
     
-    private func presentOnboardingWindow() {
+    func presentOnboardingWindow() {
         onboardingWindow = NSWindow(
             contentRect: NSRect(x: 0, y: 0, width: 600, height: 620),
-            styleMask: [.titled], // Removed below
+            styleMask: [.titled],
             backing: .buffered,
             defer: false
         )

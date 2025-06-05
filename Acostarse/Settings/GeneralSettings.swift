@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct GeneralSettings: View {
+    @NSApplicationDelegateAdaptor var appDelegate: AppDelegate
     @Environment(\.openURL) var openURL
-    @State private var showIntroduction = false
     
     @AppStorage("strictMode") var strictMode: Bool = false
     
@@ -28,7 +28,7 @@ struct GeneralSettings: View {
                     Text("Walkthrough")
                     Spacer()
                     Button("Start") {
-                        showIntroduction.toggle()
+                        appDelegate.presentOnboardingWindow()
                     }
                 }
             }

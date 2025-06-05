@@ -85,7 +85,7 @@ struct TipJar: View {
         .frame(minWidth: 350, minHeight: 300)
     }
     
-    func bulletLine(_ textContent: String, systemImage: String, tint: Color) -> some View {
+    func bulletLine(_ textContent: LocalizedStringKey, systemImage: String, tint: Color) -> some View {
         Label {
             Text(textContent)
         } icon: {

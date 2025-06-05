@@ -10,9 +10,10 @@ import SwiftUI
 struct Roadmap: View {
     
     private struct RoadmapItem {
-        var title: String
+        let id = UUID()
+        var title: LocalizedStringKey
         var symbol: String
-        var description: String
+        var description: LocalizedStringKey
     }
 
     private let roadmapItems: [RoadmapItem] = [
@@ -25,7 +26,7 @@ struct Roadmap: View {
     var body: some View {
         Form {
             Section {
-                ForEach(roadmapItems, id: \.title) { item in
+                ForEach(roadmapItems, id: \.id) { item in
                     HStack {
                         Image(systemName: item.symbol)
                             .foregroundColor(.accentColor)

@@ -38,10 +38,7 @@ struct ContentView: View {
                 Button("Close", systemImage: "xmark") {
                     NSApp.terminate(nil)
                 }
-                .bold()
-                .buttonStyle(.borderless)
-                .labelStyle(.iconOnly)
-                .padding()
+                .buttonStyle(MenuBarToolbarButtonStyle(direction: .trailing))
             }
         }
         .overlay(alignment: .topLeading) {
@@ -49,12 +46,45 @@ struct ContentView: View {
                 SettingsLink(label: {
                     Label("Settings", systemImage: "gear")
                 })
-                .bold()
-                .buttonStyle(.borderless)
-                .labelStyle(.iconOnly)
-                .padding()
+                .buttonStyle(MenuBarToolbarButtonStyle(direction: .leading))
             }
         }
+    }
+}
+
+struct MenuBarToolbarButtonStyle: ButtonStyle {
+    @State private var isHovering = false
+    var direction = Alignment.leading
+    
+    func makeBody(configuration: Configuration) -> some View {
+        HStack {
+            if direction == .trailing {
+                configuration.label
+                    .labelStyle(.titleOnly)
+                    .transition(.blurReplace)
+                    .opacity(isHovering ? 1 : 0)
+            }
+            
+            configuration.label
+                .bold()
+                .labelStyle(.iconOnly)
+            
+            if direction == .leading {
+                configuration.label
+                    .labelStyle(.titleOnly)
+                    .transition(.blurReplace)
+                    .opacity(isHovering ? 1 : 0)
+            }
+        }
+        .padding(5)
+        .onHover {
+            isHovering = $0
+        }
+        .opacity(configuration.isPressed ? 0.5 : 1)
+        .background(.secondary.opacity(configuration.isPressed ? 0.2 : 0), in: .capsule)
+        .animation(.easeInOut, value: isHovering)
+        .animation(.spring, value: configuration.isPressed)
+        .padding(10)
     }
 }
 

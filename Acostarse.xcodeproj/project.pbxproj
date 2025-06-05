@@ -12,6 +12,7 @@
 		C2CD47C32DF15A87006A7E43 /* MenuBarHighlighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C22DF15A87006A7E43 /* MenuBarHighlighter.swift */; };
 		C2CD47C52DF15AA0006A7E43 /* StartUsingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C42DF15AA0006A7E43 /* StartUsingView.swift */; };
 		C2CD47C72DF15FF2006A7E43 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C62DF15FF2006A7E43 /* AppDelegate.swift */; };
+		C2CD47C92DF16ADD006A7E43 /* LogInToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD47C82DF16ADD006A7E43 /* LogInToggle.swift */; };
 		C2EB4F982DF1561800226CB8 /* Synced Tips.storekit in Resources */ = {isa = PBXBuildFile; fileRef = C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */; };
 		C2EB4F9B2DF1566500226CB8 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */; };
 		C2EB4FA32DF1588000226CB8 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2EB4FA22DF1588000226CB8 /* OnboardingController.swift */; };
@@ -41,6 +42,7 @@
 		C2CD47C22DF15A87006A7E43 /* MenuBarHighlighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarHighlighter.swift; sourceTree = "<group>"; };
 		C2CD47C42DF15AA0006A7E43 /* StartUsingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartUsingView.swift; sourceTree = "<group>"; };
 		C2CD47C62DF15FF2006A7E43 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C2CD47C82DF16ADD006A7E43 /* LogInToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInToggle.swift; sourceTree = "<group>"; };
 		C2EB4F972DF1561800226CB8 /* Synced Tips.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Synced Tips.storekit"; sourceTree = "<group>"; };
 		C2EB4F9A2DF1566500226CB8 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		C2EB4FA22DF1588000226CB8 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				C2F1BEA62DEF25E80056A4BA /* BedtimeMonitor.swift */,
 				C2F1BEA82DEF27AD0056A4BA /* AlertWindowManager.swift */,
+				C2CD47C82DF16ADD006A7E43 /* LogInToggle.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 				C2EC54882DF14DEB0012F73D /* Roadmap.swift in Sources */,
 				C2EC547E2DF14D5E0012F73D /* TipJar.swift in Sources */,
 				C2EC547F2DF14D5E0012F73D /* StoreKitManager.swift in Sources */,
+				C2CD47C92DF16ADD006A7E43 /* LogInToggle.swift in Sources */,
 				C2F1BEA22DEF23BF0056A4BA /* VisualEffectView.swift in Sources */,
 				C2CD47C52DF15AA0006A7E43 /* StartUsingView.swift in Sources */,
 				C2CD47C72DF15FF2006A7E43 /* AppDelegate.swift in Sources */,

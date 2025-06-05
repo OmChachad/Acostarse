@@ -23,6 +23,8 @@ struct GeneralSettings: View {
                 Text("Strict Mode disables the '5 more minutes' button and forces you to go to sleep when the alert appears.")
             }
             
+            LogInToggle()
+            
             Section {
                 HStack {
                     Text("Walkthrough")

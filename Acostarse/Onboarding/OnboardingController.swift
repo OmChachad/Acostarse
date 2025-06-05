@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import ServiceManagement
 
 struct OnboardingController: View {
     @AppStorage("onboardingCompletedDate") private var onboardingCompletedDate: Date?
@@ -81,7 +82,12 @@ struct OnboardingController: View {
                             .buttonStyle(OnboardingButtonStyle())
                         } else if currentPage == .final {
                             Button("Start Using") {
-                                onboardingCompletedDate = Date.now
+                                if onboardingCompletedDate == nil {
+                                    onboardingCompletedDate = Date.now
+                                    
+                                    // Start up at login.
+                                    try? SMAppService.mainApp.register()
+                                }
                                 
                                 withAnimation(.spring(duration: 1.5)) {
                                     isLoadedStage1 = false

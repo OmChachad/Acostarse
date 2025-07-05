@@ -1,6 +1,6 @@
 //
 //  OnboardingController.swift
-//  Acostarse
+//  Acostar
 //
 //  Created by Om Chachad on 6/5/25.
 //

@@ -12,13 +12,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "I'm the sole developer behind Acostarse, thanks for checking out my app. I'm a passionate software developer who loves making apps for free. I hope you are enjoying Acostarse!"
+            "value" : "I'm the sole developer behind Acostar, thanks for checking out my app. I'm a passionate software developer who loves making apps for free. I hope you are enjoying Acostar!"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Soy el único desarrollador detrás de “Acostarse”. ¡Gracias por probar mi app! Soy un apasionado desarrollador de software que disfruta creando aplicaciones gratuitas. ¡Espero que estés disfrutando “Acostarse”!"
+            "value" : "Soy el único desarrollador detrás de “Acostar”. ¡Gracias por probar mi app! Soy un apasionado desarrollador de software que disfruta creando aplicaciones gratuitas. ¡Espero que estés disfrutando “Acostar”!"
           }
         }
       }
@@ -39,23 +39,22 @@
         }
       }
     },
-    "Acostarse" : {
+    "Acostar" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“Acostarse\""
+            "value" : "\"Acostar\""
           }
         }
-      },
-      "shouldTranslate" : false
+      }
     },
-    "Acostarse is ready to use!" : {
+    "Acostar is ready to use!" : {
       "localizations" : {
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“Acostarse” está listo para usarse!"
+            "value" : "“Acostar” está listo para usarse!"
           }
         }
       }
@@ -219,13 +218,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Acostarse lives in your menu bar."
+            "value" : "Acostar lives in your menu bar."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "“Acostarse” vive en la barra de menús."
+            "value" : "“Acostar” vive en la barra de menús."
           }
         }
       }
@@ -251,13 +250,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Welcome to Acostarse!"
+            "value" : "Welcome to Acostar!"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "¡Te damos la bienvenida a “Acostarse\"!"
+            "value" : "¡Te damos la bienvenida a “Acostar\"!"
           }
         }
       }
@@ -287,7 +286,7 @@
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Salir de Acostarse"
+            "value" : "Salir de Acostar"
           }
         }
       }
@@ -635,13 +634,13 @@
         "en" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Tipping lets me, the sole developer of Acostarse, know that you're enjoying the app, helps sustain development and lets me keep the app 100% free for all users."
+            "value" : "Tipping lets me, the sole developer of Acostar, know that you're enjoying the app, helps sustain development and lets me keep the app 100% free for all users."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Las propinas me permiten, como único desarrollador de “Acostarse”, saber que estás disfrutando la app, ayudan a sostener su desarrollo y me permiten mantenerla 100% gratis para todos los usuarios."
+            "value" : "Las propinas me permiten, como único desarrollador de “Acostar”, saber que estás disfrutando la app, ayudan a sostener su desarrollo y me permiten mantenerla 100% gratis para todos los usuarios."
           }
         }
       }

@@ -1,6 +1,6 @@
 //
-//  AcostarseApp.swift
-//  Acostarse
+//  AcostarApp.swift
+//  Acostar
 //
 //  Created by Om Chachad on 6/3/25.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct AcostarseApp: App {
+struct AcostarApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
     
     @StateObject private var alertManager = AlertWindowManager.shared
@@ -26,7 +26,7 @@ struct AcostarseApp: App {
         }
         #endif
         
-        MenuBarExtra("Acostarse", systemImage: "bed.double.fill") {
+        MenuBarExtra("Acostar", systemImage: "bed.double.fill") {
             ContentView(style: .menuBar)
                 .frame(height: 300)
         }
